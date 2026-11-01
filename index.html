@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#224e40"><meta name="description" content="Подготовка к ЕГЭ по русскому языку: правила для заданий 1–27, материалы ФИПИ, примеры и личный прогресс.">
+  <title>По правилам — русский язык, ЕГЭ</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">К содержимому</a>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar" aria-label="Навигация">
+    <a class="brand" href="#/">п<span>о</span> правилам<span class="brand-dot">.</span></a>
+    <div class="brand-caption">РУССКИЙ ЯЗЫК · ЕГЭ</div>
+    <nav class="main-nav">
+      <a href="#/" data-nav="home"><span aria-hidden="true">▦</span> Все задания <small>27</small></a>
+      <a href="#/favorites" data-nav="favorites"><span aria-hidden="true">☆</span> Избранное <small id="favorite-count">0</small></a>
+      <a href="#/materials" data-nav="materials"><span aria-hidden="true">▤</span> Библиотека <small id="material-count">63</small></a>
+      <a href="#/sources" data-nav="sources"><span aria-hidden="true">↗</span> Материалы ФИПИ</a>
+    </nav>
+    <div class="side-label">БЫСТРЫЙ ПЕРЕХОД</div><nav id="task-nav" class="task-nav" aria-label="Номера заданий"></nav>
+    <div class="side-progress"><div class="progress-top"><span>Твой прогресс</span><strong id="progress-count">0 / 27</strong></div><progress id="progress-bar" max="27" value="0" aria-label="Изученные задания"></progress><p>По одному правилу — к уверенности.</p></div>
+    <a class="repo-link" href="https://github.com/dolepp/Rules" target="_blank" rel="noopener noreferrer">Исходный код на GitHub <span>↗</span></a>
+  </aside>
+  <div class="main-shell">
+    <header class="topbar"><button class="icon-button mobile-menu" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="sidebar">☰</button><div class="breadcrumb">Твоя база знаний <span>/</span> <b id="crumb">Все задания</b></div><button class="search-launch" id="search-launch"><span aria-hidden="true">⌕</span> Найти правило <kbd>Ctrl K</kbd></button></header>
+    <main id="content" tabindex="-1"><div class="loading">Открываем тетрадь…</div></main>
+    <footer><span>По правилам. Учиться в своём темпе.</span><a href="#/sources">Источники и актуальность ↗</a><span>Прогресс сохраняется на этом устройстве</span></footer>
+  </div>
+</div>
+<div class="menu-backdrop" id="menu-backdrop" hidden></div>
+<dialog id="viewer"><div class="dialog-head"><h2 id="viewer-title">Материал</h2><button class="icon-button" id="close-viewer" aria-label="Закрыть просмотр">✕</button></div><div id="viewer-body"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript>Для навигации по заданиям включи JavaScript. <a href="https://fipi.ru/navigator-podgotovki/navigator-ege">Открыть материалы ФИПИ</a>.</noscript>
+</body></html>
